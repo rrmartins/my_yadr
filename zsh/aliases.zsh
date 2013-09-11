@@ -137,15 +137,21 @@ alias portforward='sudo ipfw add 1000 forward 127.0.0.1,3000 ip from any to any 
 
 alias rdm='rake db:migrate'
 alias rdmr='rake db:migrate:redo'
+alias be='bundle exec '
+alias berdmtp='bundle exec rake db:migrate test:prepare '
 
 # Zeus
 alias zs='zeus server'
 alias zc='zeus console'
 
 # Rspec
-alias rs='rspec spec'
+alias rsp='rspec spec'
 
 # Sprintly - https://github.com/nextbigsoundinc/Sprintly-GitHub
 alias sp='sprintly'
 # spb = sprintly branch - create a branch automatically based on the bug you're working on
 alias spb="git checkout -b \`sp | tail -2 | grep '#' | sed 's/^ //' | sed 's/[^A-Za-z0-9 ]//g' | sed 's/ /-/g' | cut -d"-" -f1,2,3,4,5\`"
+
+# bash local
+source ~/.bash_aliases
+source ~/.bashrc
