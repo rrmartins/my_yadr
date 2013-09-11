@@ -28,6 +28,10 @@ Bundle "tpope/vim-rvm.git"
 Bundle "vim-ruby/vim-ruby.git"
 Bundle "vim-scripts/Specky.git"
 Bundle "ck3g/vim-change-hash-syntax"
+Bundle 'thoughtbot/vim-rspec'
+
+" Erlang
+Bundle 'jimenezrick/vimerl'
 
 " Other languages
 Bundle "briancollins/vim-jst"
@@ -55,6 +59,7 @@ Bundle "skwp/vim-git-grep-rails-partial"
 Bundle "tjennings/git-grep-vim"
 Bundle "tpope/vim-fugitive"
 Bundle "tpope/vim-git"
+Bundle 'croaky/vim-colors-github'
 
 " General text editing improvements...
 Bundle "AndrewRadev/splitjoin.vim"
@@ -100,6 +105,7 @@ Bundle "vim-scripts/lastpos.vim"
 Bundle "vim-scripts/sudo.vim"
 Bundle "xsunsmile/showmarks.git"
 Bundle "terryma/vim-multiple-cursors"
+
 "vim-misc is required for vim-session
 Bundle "xolox/vim-misc"
 Bundle "xolox/vim-session"
