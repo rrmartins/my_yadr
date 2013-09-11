@@ -101,3 +101,11 @@ set wildignore+=*.png,*.jpg,*.gif
 set scrolloff=8         "Start scrolling when we're 8 lines away from margins
 set sidescrolloff=15
 set sidescroll=1
+
+
+set runtimepath^=~/.vim/bundle/ctrlp.vim
+
+syntax enable
+set background=light
+colorscheme solarized
+
