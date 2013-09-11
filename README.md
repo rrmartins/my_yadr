@@ -8,7 +8,7 @@
     # Yet Another Dotfile Repo v1.1
     # Now with Prezto and Vundle!
 
-    sh -c "`curl -fsSL https://raw.github.com/skwp/dotfiles/master/install.sh`"
+    sh -c "`curl -fsSL https://raw.github.com/rrmartins/my_yadr/master/install.sh`"
 
 **Always be sure to run `rake update` after pulling to ensure plugins are updated**
 
@@ -44,13 +44,13 @@ Installation is automated via `rake` and the `yadr` command. To get
 started please run:
 
 ```bash
-sh -c "`curl -fsSL https://raw.github.com/skwp/dotfiles/master/install.sh`"
+sh -c "`curl -fsSL https://raw.github.com/rrmartins/my_yadr/master/install.sh`"
 ```
 
 **Note:** YADR will automatically install all of its subcomponents. If you want to be asked
 about each one, use:
 ```bash
-sh -c "`curl -fsSL https://raw.github.com/skwp/dotfiles/master/install.sh`" -s ask
+sh -c "`curl -fsSL https://raw.github.com/rrmartins/my_yadr/master/install.sh`" -s ask
 ```
 
 # Additional Installation
@@ -153,7 +153,7 @@ Next time you load your shell, this file will be read and your prompt will be th
 Pry offers a much better out of the box IRB experience with colors, tab completion, and lots of other tricks. You can also use it
 as an actual debugger on MRI 1.9.2+ by installing [pry-debugger](https://github.com/nixme/pry-debugger).
 
-[Learn more about YADR's pry customizations and how to install](https://github.com/skwp/dotfiles/blob/master/README-pry.md)
+[Learn more about YADR's pry customizations and how to install](https://github.com/rrmartins/my_yadr/blob/master/README-pry.md)
 
 ### Git Configuration
 
@@ -193,8 +193,8 @@ if you don't like them, or make your own.
 ### Vim Keymaps
 
 The files in vim/plugin/settings are customizations stored on a per-plugin
-basis. The main keymap is available in skwp-keymap.vim, but some of the vim
-files contain key mappings as well (TODO: probably will move them out to skwp-keymap.vim)
+basis. The main keymap is available in rrmartins-keymap.vim, but some of the vim
+files contain key mappings as well (TODO: probably will move them out to rrmartins-keymap.vim)
 
 ### Debugging vim keymappings
 
@@ -342,7 +342,7 @@ If you omit the key combo, you'll get a list of all the maps. You can do the sam
  * NERDTree - everyone's favorite tree browser
  * NERDTree-tabs - makes NERDTree play nice with MacVim tabs so that it's on every tab
  * ShowMarks - creates a visual gutter to the left of the number column showing you your marks
- * EasyMotion - hit ,<esc> (forward) or ,<Shift-Esc> (back) and watch the magic happen. Just type the letters and jump directly to your target - in the provided vimrc the keys are optimized for home row mostly. Using @skwp modified EasyMotion which uses vimperator-style two character targets.
+ * EasyMotion - hit ,<esc> (forward) or ,<Shift-Esc> (back) and watch the magic happen. Just type the letters and jump directly to your target - in the provided vimrc the keys are optimized for home row mostly. Using @rrmartins modified EasyMotion which uses vimperator-style two character targets.
  * TagBar - hit ,T to see a list of methods in a class (uses ctags)
  * CtrlP - ,t to find a file
  * Visual-star-search - make the * (star) search in visual mode behave like expected: searching for the whole selection instead of just the word under the cursor.
@@ -356,7 +356,7 @@ If you omit the key combo, you'll get a list of all the maps. You can do the sam
 #### Colors
 
  * AnsiEsc - inteprets ansi color codes inside log files. great for looking at Rails logs
- * solarized - a color scheme scientifically calibrated for awesomeness (including skwp mods for ShowMarks)
+ * solarized - a color scheme scientifically calibrated for awesomeness (including rrmartins mods for ShowMarks)
  * Powerline - beautiful vim status bar. Requires patched fonts (installed from fonts/ directory)
 
 #### Coding
@@ -495,13 +495,6 @@ Please explore these people's work.
 
 Yadr is made possible by many awesome people, too many to list :) But here are a few of the bigger contributors and core committers.
 
- * Initial Version: @[skwp](https://github.com/skwp)
- * Cleanup, auto installer: @[kylewest](https://github.com/kylewest)
- * Switch from oh-my-zsh to Presto: @[JeanMertz](https://github.com/JeanMertz)
- * Vundle migration: @[duhanebel](https://github.com/duhanebel)
+ * Initial Version: @[rrmartins](https://github.com/rrmartins)
 
-
-### For more tips and tricks
-
-Follow my blog: http://yanpritzker.com
 
