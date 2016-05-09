@@ -44,7 +44,7 @@ fi
 alias lsg='ll | grep'
 
 # Alias Editing
-alias ae='vim $yadr/zsh/aliases.zsh' #alias edit
+alias ae='atom $yadr/zsh/aliases.zsh' #alias edit
 alias ar='source $yadr/zsh/aliases.zsh'  #alias reload
 
 # vim using
@@ -190,3 +190,29 @@ alias dbmu='spring rake db:migrate:up'
 
 # Homebrew
 alias brewu='brew update && brew upgrade && brew cleanup && brew prune && brew doctor'
+
+# alias to workspace
+alias projects='cd /Volumes/Dados/codes_projects/'
+
+# bundle exec
+alias be='bundle exec '
+# a lias ra ="nogl ob rake"
+
+# sublime
+alias sbl='open -a "Sublime Text"'
+
+# atom
+alias at='/Applications/Atom.app/Contents/Resources/app/atom.sh '
+alias a='at '
+
+#go
+alias grn='go run '
+
+#mysql
+alias myst='mysql.server start'
+alias mysp='mysql.server stop'
+
+gacm() {
+  ga $1
+  gcm $2
+}
