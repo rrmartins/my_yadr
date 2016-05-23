@@ -48,7 +48,7 @@ TRAPHUP() {
   source $yadr/zsh/aliases.zsh
 }
 
-alias ae='a $yadr/zsh/aliases.zsh' #alias edit
+alias ae='at $yadr/zsh/aliases.zsh' #alias edit
 alias ar='source $yadr/zsh/aliases.zsh'  #alias reload
 alias gar="killall -HUP -u \"$USER\" zsh"  #global alias reload
 
@@ -63,10 +63,10 @@ fi
 alias :q='exit'
 
 # vimrc editing
-alias ve='a ~/.vimrc'
+alias ve='at ~/.vimrc'
 
 # zsh profile editing
-alias ze='a ~/.zshrc'
+alias ze='at ~/.zshrc'
 
 # Git Aliases
 alias gs='git status'
@@ -77,7 +77,7 @@ alias gsa='git stash apply'
 alias gsh='git show'
 alias gshw='git show'
 alias gshow='git show'
-alias gi='a .gitignore'
+alias gi='at .gitignore'
 alias gcm='git ci -m'
 alias gcim='git ci -m'
 alias gci='git ci'
@@ -226,7 +226,6 @@ alias sbl='open -a "Sublime Text"'
 
 # atom
 alias at='/Applications/Atom.app/Contents/Resources/app/atom.sh '
-alias a='at '
 
 #go
 alias grn='go run '
@@ -234,6 +233,10 @@ alias grn='go run '
 #mysql
 alias myst='mysql.server start'
 alias mysp='mysql.server stop'
+
+# autoseg
+alias asg='projects && cd autoseg/ '
+alias autoseg='asg '
 
 gacm() {
   ga $1
