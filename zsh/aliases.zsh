@@ -79,6 +79,7 @@ alias gshw='git show'
 alias gshow='git show'
 alias gi='at .gitignore'
 alias gcm='git ci -m'
+alias gcsm='git commit -S -m '
 alias gcim='git ci -m'
 alias gci='git ci'
 alias gco='git co'
@@ -119,6 +120,7 @@ alias gplr='git pull --rebase'
 alias gps='git push'
 alias gpsh='git push -u origin `git rev-parse --abbrev-ref HEAD`'
 alias gnb='git nb' # new branch aka checkout -b
+alias gck='git checkout '
 alias grs='git reset'
 alias grsh='git reset --hard'
 alias gcln='git clean'
@@ -238,7 +240,19 @@ alias mysp='mysql.server stop'
 alias asg='projects && cd autoseg/ '
 alias autoseg='asg '
 
+alias edit='at '
+
+# vagrant
+alias v='vagrant '
+alias vi='v init '
+alias vh='v halt '
+alias vs='v ssh '
+alias vu='v up '
+alias vuv='vu --provider virtualbox'
+
 gacm() {
   ga $1
-  gcm $2
+  gcsm $2
 }
+
+alias gitdo='/Volumes/Dados/codes_projects/autoseg/scripts/gitdo.rb '
