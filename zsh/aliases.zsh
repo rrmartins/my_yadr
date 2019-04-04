@@ -217,17 +217,20 @@ alias dbmu='spring rake db:migrate:up'
 alias brewu='brew update && brew upgrade --all && brew cleanup && brew prune && brew doctor'
 
 # alias to workspace
-alias projects='cd /Volumes/Dados/codes_projects/'
+alias projects='cd ~/Documents/projects/'
 
 # bundle exec
 alias be='bundle exec '
+alias ber='bundle exec rspec '
 # a lias ra ="nogl ob rake"
 
 # sublime
 alias sbl='open -a "Sublime Text"'
 
+alias vs="/Applications/Visual\ Studio\ Code.app/Contents/Resources/app/bin"
+
 # atom
-alias at='/Applications/Atom.app/Contents/Resources/app/atom.sh '
+alias at='vs '
 
 #go
 alias grn='go run '
@@ -236,23 +239,21 @@ alias grn='go run '
 alias myst='mysql.server start'
 alias mysp='mysql.server stop'
 
-# autoseg
-alias asg='projects && cd autoseg/ '
-alias autoseg='asg '
-
 alias edit='at '
 
 # vagrant
-alias v='vagrant '
-alias vi='v init '
-alias vh='v halt '
-alias vs='v ssh '
-alias vu='v up '
-alias vuv='vu --provider virtualbox'
+# alias v='vagrant '
+# alias vi='v init '
+# alias vh='v halt '
+# alias vs='v ssh '
+# alias vu='v up '
+# alias vuv='vu --provider virtualbox'
 
 gacm() {
   ga $1
   gcsm $2
 }
 
-alias gitdo='/Volumes/Dados/codes_projects/autoseg/scripts/gitdo.rb '
+# caiena
+alias caiena='projects && caiena'
+alias sdc-api='caiena && sdc-api'
