@@ -3,6 +3,10 @@
 # Don't change. The following determines where YADR is installed.
 yadr=$HOME/.yadr
 
+source ~/.yadr/zsh/prezto/modules/git/alias.zsh
+
+alias gpc='git push --set-upstream origin "$(git symbolic-ref --short -q HEAD)"'
+
 # Get operating system
 platform='unknown'
 unamestr=$(uname)
@@ -217,17 +221,22 @@ alias dbmu='spring rake db:migrate:up'
 alias brewu='brew update && brew upgrade --all && brew cleanup && brew prune && brew doctor'
 
 # alias to workspace
-alias projects='cd /Volumes/Dados/codes_projects/'
+alias projects='cd ~/Documents/projects/'
 
 # bundle exec
 alias be='bundle exec '
+alias ber='bundle exec rspec '
+alias bi='bundle install '
 # a lias ra ="nogl ob rake"
 
 # sublime
 alias sbl='open -a "Sublime Text"'
 
+alias vs="code "
+
 # atom
-alias at='/Applications/Atom.app/Contents/Resources/app/atom.sh '
+# alias at='vs '
+alias at='nvim '
 
 #go
 alias grn='go run '
@@ -236,23 +245,54 @@ alias grn='go run '
 alias myst='mysql.server start'
 alias mysp='mysql.server stop'
 
-# autoseg
-alias asg='projects && cd autoseg/ '
-alias autoseg='asg '
-
 alias edit='at '
 
 # vagrant
-alias v='vagrant '
-alias vi='v init '
-alias vh='v halt '
-alias vs='v ssh '
-alias vu='v up '
-alias vuv='vu --provider virtualbox'
+# alias v='vagrant '
+# alias vi='v init '
+# alias vh='v halt '
+# alias vs='v ssh '
+# alias vu='v up '
+# alias vuv='vu --provider virtualbox'
 
 gacm() {
   ga $1
-  gcsm $2
+  gcm $2
 }
 
-alias gitdo='/Volumes/Dados/codes_projects/autoseg/scripts/gitdo.rb '
+# chefsclub
+alias chefsclub='projects && chefsclub'
+alias lingo='chefsclub && lingo'
+alias rizzo='chefsclub && rizzo'
+alias troisgros='chefsclub && troisgros'
+alias gup='gf upstream'
+alias gplu='gpl upstream'
+alias gplingo='git push -u gitling `git rev-parse --abbrev-ref HEAD`'
+
+alias migtest='be rake db:migrate && be rake db:migrate RAILS_ENV=test'
+
+alias sshsdc='ssh sdc@qa.api.sdc.caiena.net'
+
+alias spp='spring stop && '
+
+alias ed-nvim='at ~/Documents/projects/my_nvim/init.vim'
+alias cnvim='cat ~/Documents/projects/my_nvim/init.vim'
+alias ed-tmux='at ~/.tmux.conf'
+
+#
+# checkout on branch
+# and deploy to env
+# 
+# $1 - branch to checkout
+# $2 - branch to merge
+# $3 - env for deploy
+#
+pushenv() {
+  gck $1 && git pull origin $1 && gm $2 && git push origin $1 && git push $3 $1:master && gck $2
+}
+alias penv=pushenv
+
+alias gblist="git for-each-ref --sort=committerdate refs/heads/ --format='%(HEAD) %(color:yellow)%(refname:short)%(color:reset) - %(color:red)%(objectname:short)%(color:reset) - %(contents:subject) - %(authorname) (%(color:green)%(committerdate:relative)%(color:reset))'"
+
+
+alias listportrails="lsof -i tcp:3000"
