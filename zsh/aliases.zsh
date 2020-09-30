@@ -265,6 +265,18 @@ alias chefsclub='projects && chefsclub'
 alias lingo='chefsclub && lingo'
 alias rizzo='chefsclub && rizzo'
 alias troisgros='chefsclub && troisgros'
+
+
+# jumpseller
+alias jumpseller='projects && jumpseller'
+alias japps='jumpseller && apps'
+alias jcore='jumpseller && core'
+alias jinternal-apps='jumpseller && internal-apps'
+alias jinstagram-media-fetch='jumpseller && instagram-media-fetch'
+alias runserver='bundle exec foreman start -f Procfile.dev'
+alias runservercore='bundle exec foreman start -f Procfile'
+alias runconsole='APP_ENV=development RACK_ENV=development bundle exec bin/console'
+
 alias gup='gf upstream'
 alias gplu='gpl upstream'
 alias gplingo='git push -u gitling `git rev-parse --abbrev-ref HEAD`'
@@ -296,3 +308,15 @@ alias gblist="git for-each-ref --sort=committerdate refs/heads/ --format='%(HEAD
 
 
 alias listportrails="lsof -i tcp:3000"
+
+
+# elixir and phoenix
+alias elixirs='projects && elixirs'
+alias readerrss='elixirs && reader_rss'
+
+
+alias tnew='tmux new -s '
+alias tattach='tmux a '
+alias tls='tmux ls'
+
+
