@@ -260,13 +260,6 @@ gacm() {
   gcm $2
 }
 
-# chefsclub
-alias chefsclub='projects && chefsclub'
-alias lingo='chefsclub && lingo'
-alias rizzo='chefsclub && rizzo'
-alias troisgros='chefsclub && troisgros'
-
-
 # jumpseller
 alias jumpseller='projects && jumpseller'
 alias japps='jumpseller && apps'
@@ -318,5 +311,13 @@ alias readerrss='elixirs && reader_rss'
 alias tnew='tmux new -s '
 alias tattach='tmux a '
 alias tls='tmux ls'
+
+#
+# remove files with 2, 3, 4, etc...
+#
+removefiles() {
+  for f in **/*\ $1*; do echo rm "$f"; rm "$f"; done
+}
+alias remfiles=removefiles
 
 
